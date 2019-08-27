@@ -1,11 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
 {% extends "base.html" %} {% block content %}
 
+</head>
+
+<title>Image Classifier></title>
+
+<h1>Welcome to my image classifier</h1>
 <h2>Image Classifier</h2>
+
+<body>
 
 <div>
     <form id="upload-file" method="post" enctype="multipart/form-data">
         <label for="imageUpload" class="upload-label">
-            Choose...
+            Select an image...
         </label>
         <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
     </form>
@@ -16,7 +28,7 @@
             </div>
         </div>
         <div>
-            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Best prediction</button>
         </div>
     </div>
 
@@ -27,5 +39,9 @@
     </h3>
 
 </div>
+
+</body>
+
+</html>
 
 {% endblock %}
